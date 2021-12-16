@@ -18,6 +18,7 @@ To enter in the container:
 
 Installation of qp2 in the container:  
 
+  chmod +x qp2_install.sh
   ./qp2_install.sh  
 
 
