@@ -29,8 +29,6 @@ exit
 ```
 
 ## Informations
-After the installation of qp2 in the container, the binaries are created, so you can use qp2 **inside or outside** the container. **But** to recompile qp2 you must be **in** the container. 
-
 For more informations about [qp2](https://github.com/QuantumPackage/qp2) see the documentation [qp2-doc](https://quantum-package.readthedocs.io/en/master/)  
 
 **If the installation of [Go](https://go.dev/dl/) or [Singularity](https://sylabs.io/guides/latest/user-guide/) failed, look at their documentation and contact their developpers**.  
