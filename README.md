@@ -33,7 +33,7 @@ After the installation of qp2 in the container, the binaries are created, so you
 
 For more informations about [qp2](https://github.com/QuantumPackage/qp2) see the documentation [qp2-doc](https://quantum-package.readthedocs.io/en/master/)  
 
-If the installation of [Go](https://go.dev/dl/) or [Singularity](https://sylabs.io/guides/latest/user-guide/) failed, look at their documentation and contact **their developpers**.
+**If the installation of [Go](https://go.dev/dl/) or [Singularity](https://sylabs.io/guides/latest/user-guide/) failed, look at their documentation and contact their developpers**.  
 **We provide a script to install them but you don't provide any guaranty, use them at you own risk**.
 
 ## Others
