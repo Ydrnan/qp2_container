@@ -22,8 +22,9 @@ fi
 # install GO
 export VERSION=1.17.5 OS=linux ARCH=amd64 
 
-if [ ! -f go$VERSION.$OS-$ARCH.tar.gz ] then
-		wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz
+if [ ! -f go$VERSION.$OS-$ARCH.tar.gz ]
+then
+	wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz
 fi
 sudo tar -C /usr/local -xzvf go$VERSION.$OS-$ARCH.tar.gz 
 echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.bashrc 
