@@ -1,0 +1,33 @@
+BootStrap: docker
+From: ubuntu:20.04
+
+%post
+HOME=/root
+cd $HOME
+apt update
+ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime
+apt install -y pkg-config 
+apt install -y git
+apt install -y musl musl-dev
+apt install -y wget
+apt install -y make
+apt install -y rsync
+apt install -y unzip
+apt install -y curl
+apt install -y gfortran
+apt install -y g++
+apt install -y python3
+ln -s /usr/bin/python3 /usr/bin/python
+apt install -y vim
+apt install -y emacs
+apt install -y pkgconf
+apt install -y libopenblas-dev
+apt install -y libgmp-dev
+apt install -y libzmq3-dev
+apt install -y libcap-dev
+apt install -y zlib1g-dev
+apt install -y pip
+apt install -y libncurses5-dev
+apt install -y libgmp3-dev 
+apt install -y m4
+apt install -y libblas-dev liblapack-dev mpi-default-dev
