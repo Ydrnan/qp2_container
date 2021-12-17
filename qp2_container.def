@@ -6,7 +6,7 @@ HOME=/root
 cd $HOME
 apt update
 ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime
-apt install -y pkg-config 
+apt install -y pkg-config
 apt install -y git
 apt install -y musl musl-dev
 apt install -y wget
@@ -22,12 +22,19 @@ apt install -y vim
 apt install -y emacs
 apt install -y pkgconf
 apt install -y libopenblas-dev
-apt install -y libgmp-dev
-apt install -y libzmq3-dev
-apt install -y libcap-dev
-apt install -y zlib1g-dev
 apt install -y pip
-apt install -y libncurses5-dev
-apt install -y libgmp3-dev 
 apt install -y m4
-apt install -y libblas-dev liblapack-dev mpi-default-dev
+
+# Intel Fortran
+cd /tmp
+wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+rm GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+
+echo "deb https://apt.repos.intel.com/oneapi all main" | tee /etc/apt/sources.list.d/oneAPI.list
+apt update
+apt install -y intel-oneapi-compiler-fortran-common-2021.4.0
+apt install -y libmkl-avx2
+
+
+
