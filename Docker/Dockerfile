@@ -31,6 +31,8 @@ curl \
  rsync \
  lsb-release
 
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 # Add user and switch to this user
 RUN adduser --disabled-password --gecos '' qpuser
 USER qpuser
