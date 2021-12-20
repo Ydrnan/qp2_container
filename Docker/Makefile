@@ -1,15 +1,12 @@
-IMAGE = qp2
+IMAGE = qp2_contanier
 
 default:
-	sudo docker build -t $(IMAGE) .
+	docker build -t $(IMAGE) .
 
 no-cache:
-	sudo docker build -t $(IMAGE) --no-cache .
+	docker build -t $(IMAGE) --no-cache .
 
 image-clean:
-	sudo docker image rm $(IMAGE)
+	docker image rm --force $(IMAGE)
 
 clean: image-clean
-
-test:
-	sudo docker run -h qp2 --rm -it $(IMAGE)

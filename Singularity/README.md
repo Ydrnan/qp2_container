@@ -12,12 +12,12 @@ Installation of singularity:
  ``` 
 Creation of the container for qp2 (**WITH sudo**):  
 ```
-sudo singularity build qp2_container.cif qp2_container.def  
+sudo singularity build qp2_container.sif qp2_container.def  
 ```
-This command produces a .cif image, which is your container, from a definition file .def.    
+This command produces a .sif image, which is your container, from a definition file .def.    
 You can now enter in the container (**WITHOUT sudo**) using:  
 ```
-singularity shell qp2_container.cif  
+singularity shell qp2_container.sif  
 ```
 and install qp2 in the container:  
 ```
